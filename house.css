@@ -1,0 +1,63 @@
+/* HEADER SECTION */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=PT+Sans&display=swap');
+
+/*GLOBAL VARAIBLES*/
+:root{
+    --header-color:  rgba(238, 223, 16, 0.945);
+    --header-color-sel: rgba(233, 202, 26, 0.377);
+    --about-us: rgba(236, 230, 230, 0.884);
+    --font-color: rgba(240, 240, 11, 0.904);
+}
+
+
+/* HOUSE INSURANCE */
+
+/* HOME SECTION */
+.showcase{
+    background: black url(/img/pexels-expect-best-323780.jpg) no-repeat center center/cover;
+    top: 60px;
+    height: 100vh;
+    color: white;
+}
+
+.showcase-content{
+    position: relative;
+    top: 120px;
+    left: 10px;
+    margin:  auto 0;
+    padding: 70px 80px;
+    height: 550px;
+    width: 750px;
+    z-index: 1;
+
+}
+
+.showcase-content h1{
+    font-family: 'Mukta',sans-serif;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+/* FEATURES */
+#features{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    color: var(--font-color);
+    margin: auto;
+    padding: 10px;
+}
+
+.features-icons{
+    justify-self: center;
+    align-items: center;
+}
+
+#features i{
+    font-size: 2.5rem;
+    text-align: center;
+}

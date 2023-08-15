@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=PT+Sans&display=swap');
+
+/* .........................................GENERAL SETTINGS.......................................................... */
+
+/*GLOBAL VARAIBLES*/
+:root{
+    --header-color:  rgba(238, 223, 16, 0.945);
+    --icons-hover: rgba(138, 131, 40, 0.945); 
+    --header-color-sel: rgba(230, 198, 22, 0.432);
+    --about-us: rgba(236, 230, 230, 0.884);
+    --font-color: rgba(240, 240, 11, 0.904);
+}
+
+/* WEBPAGE SETTING */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+    font-family: "PT sans", sans-serif;
+  }
+  
+  
+  .container{
+      max-width: 1600px;
+      overflow: hidden;
+    }
+/*HEADER*/
+
+  header{
+    display: flex;
+    justify-content:space-between ;
+    height: 100px;
+    background:var(--header-color);
+  }
+
+/* LOGO */
+
+  .logo{
+        width:  300px;
+        height: 80px;
+        margin: 10px 20px;
+        padding: 10px;
+  }
+/* LOGO */
+
+  .nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 40px;
+    margin: 40px;
+    padding: 5px;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+  }
+
+    li a {
+    font-size: 20px;
+    color:  black;
+    list-style: none;
+    text-decoration: none;
+  }
+
+/* GET AN AMAZING CSS FOR HOVER TECHNIQUES  */
+
+  li.icons:hover{
+    padding: 5px;
+    background-color:var(--icons-hover) ;
+    color: #fff;
+  }
+  .selected{
+    padding: 5px;
+    background-color: var(--header-color-sel) ;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  .selected a{
+    color: white;
+  }
+
+  /* FOOTER */
+  footer{
+    height: 300px;
+    background: var(--header-color);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.rowwrap{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 30px;
+}
+
+.imgfooter{
+    width: 200px;
+    height: 100px;
+}
+
+.row a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.row a:hover{
+    color:var(--neutral-color2);
+}
+
+/* SOCIAL MEDIA ICONS  */
+.lastcol{
+  display: flex;
+  flex-direction: column;
+}
+.rowicon{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.social-icons{
+    width: 200px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+}
+
+  /* ....................................RESPONSIVE DEVICES............................................................*/
+
+  /* TABLET (481px - 820px) */
+  @media (min-width:481px) and (max-width: 820px) {
+        
+    /* footer - icons */
+    .rowicon{
+      margin: 10px;
+      padding: 2px;
+    }
+  }
+
+    /* Mobile Devices (320px - 480px) */
+
+  @media (min-width: 320px) and (max-width: 768px){
+      /*HEADER*/
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background:var(--header-color);
+  }
+  /* LOGO */
+  .logo{
+        position: relative;
+        left: 40px;
+        margin: 10px;
+        padding: 5px;
+  }
+.nav-bar{
+  margin: auto;
+}
+ /* FOOTER */
+  footer{
+    height: 1000px;
+    background: var(--header-color);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row{
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 30px;
+}
+
+.imgfooter{
+    width: 200px;
+    height: 100px;
+}
+
+.row a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.row a:hover{
+    color:var(--neutral-color2);
+}
+
+/* SOCIAL MEDIA ICONS  */
+.rowicon{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.social-icons{
+    width: 200px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+}
+  }
